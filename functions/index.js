@@ -1,14 +1,11 @@
-// Si les imports ne sont pas utilisés, commentez-les ou supprimez-les
-// const functions = require('firebase-functions');
-// const logger = require('firebase-functions/logger');
+// Si functions est déjà déclaré ailleurs dans le fichier, assurez-vous de ne pas le redéclarer
+// et d'utiliser la déclaration existante.
 
-// Exemple d'utilisation (si nécessaire)
-const functions = require('firebase-functions');
-
-exports.helloWorld = functions.https.onRequest((request, response) => {
-  response.send("Hello from Firebase!");
-});
-/* eslint-disable no-unused-vars */
 const functions = require('firebase-functions');
 const logger = require('firebase-functions/logger');
-/* eslint-enable no-unused-vars */
+
+// Exemple d'utilisation de onRequest et logger
+exports.helloWorld = functions.https.onRequest((request, response) => {
+  response.send("Hello from Firebase!");
+  logger.info("HelloWorld function called"); // Exemple d'utilisation de logger
+});
