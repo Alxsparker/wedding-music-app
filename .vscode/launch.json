@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Script: start",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+          "run-script",
+          "start"
+        ],
+        "port": 3000,
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  }
+  
